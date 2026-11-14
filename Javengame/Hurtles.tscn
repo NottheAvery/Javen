@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://27rkxe1o615v"]
+
+[ext_resource type="Texture2D" uid="uid://varsxpq4nv2r" path="res://mapone.png" id="1_f8i70"]
+[ext_resource type="Script" uid="uid://cnwq0yu3kn2p8" path="res://camera.gd" id="2_hpko6"]
+[ext_resource type="Texture2D" uid="uid://t37qxx73v54u" path="res://maptwo.png" id="3_rqf8a"]
+[ext_resource type="Texture2D" uid="uid://cwcbga3fuid8b" path="res://icon.svg" id="4_rqf8a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oejjr"]
+font_size = 80
+
+[sub_resource type="LabelSettings" id="LabelSettings_bm8rm"]
+font_size = 40
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_47xu7"]
+radius = 63.0
+height = 126.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_it8ie"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_rqf8a")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1728672533]
+
+[node name="mapone" type="Sprite2D" parent="." unique_id=494168661]
+position = Vector2(-576, -324)
+texture = ExtResource("1_f8i70")
+
+[node name="somewhere" type="Label" parent="mapone" unique_id=1277744171]
+offset_left = -555.0
+offset_top = 202.0
+offset_right = -31.0
+offset_bottom = 315.0
+text = "Somewhere..."
+label_settings = SubResource("LabelSettings_oejjr")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=198426931 node_paths=PackedStringArray("player")]
+position = Vector2(-576, -324)
+script = ExtResource("2_hpko6")
+player = NodePath("../CharacterBody2D")
+
+[node name="Timer" type="Timer" parent="Camera2D" unique_id=1114300652]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="Timer2" type="Timer" parent="Camera2D" unique_id=767838615]
+wait_time = 9.0
+one_shot = true
+autostart = true
+
+[node name="Marker2D" type="Marker2D" parent="Camera2D" unique_id=1296243363]
+z_index = 1
+position = Vector2(-1152, 0)
+
+[node name="maptwo" type="Sprite2D" parent="." unique_id=186334420]
+position = Vector2(-1728, -324)
+texture = ExtResource("3_rqf8a")
+
+[node name="Label" type="Label" parent="maptwo" unique_id=1752675941]
+offset_left = -554.0
+offset_top = 243.0
+offset_right = 83.0
+offset_bottom = 298.0
+text = "Between Indonesia and Australia..."
+label_settings = SubResource("LabelSettings_bm8rm")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1519086138]
+position = Vector2(200, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=256861622]
+shape = SubResource("CapsuleShape2D_47xu7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=594233834]
+sprite_frames = SubResource("SpriteFrames_it8ie")
