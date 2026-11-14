@@ -14,5 +14,6 @@ func _on_timer_timeout_2():
 func _process(delta:float) -> void:
 	if timer2.time_left < 1:
 		global_position = player.global_position
+		zoom = Vector2(6,6)
 	else:
 		return
