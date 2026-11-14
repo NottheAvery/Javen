@@ -11,3 +11,8 @@ func _on_timer_timeout() -> void:
 	global_position = target_marker.global_position
 func _on_timer_timeout_2():
 	global_position = player.global_position
+func _process(delta:float) -> void:
+	if timer2.time_left < 1:
+		global_position = player.global_position
+	else:
+		return

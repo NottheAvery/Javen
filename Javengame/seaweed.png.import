@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brw8qptuqcqjc"
-path="res://.godot/imported/New Piskel-20261114-111754.png-6e26b48dd90013e20ccc83c98f2694be.ctex"
+path="res://.godot/imported/seaweed.png-2b436bd48dea6e8c9463d8c00d15b521.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://New Piskel-20261114-111754.png"
-dest_files=["res://.godot/imported/New Piskel-20261114-111754.png-6e26b48dd90013e20ccc83c98f2694be.ctex"]
+source_file="res://seaweed.png"
+dest_files=["res://.godot/imported/seaweed.png-2b436bd48dea6e8c9463d8c00d15b521.ctex"]
 
 [params]
 

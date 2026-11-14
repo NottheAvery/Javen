@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cnwq0yu3kn2p8" path="res://camera.gd" id="2_hpko6"]
 [ext_resource type="Texture2D" uid="uid://t37qxx73v54u" path="res://maptwo.png" id="3_rqf8a"]
 [ext_resource type="Texture2D" uid="uid://cwcbga3fuid8b" path="res://icon.svg" id="4_rqf8a"]
+[ext_resource type="Script" uid="uid://deacihw1mk5s1" path="res://kangaroo.gd" id="4_wry8x"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_oejjr"]
 font_size = 80
@@ -26,6 +27,8 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="TileSet" id="TileSet_rqf8a"]
+
 [node name="Node2D" type="Node2D" unique_id=1728672533]
 
 [node name="mapone" type="Sprite2D" parent="." unique_id=494168661]
@@ -46,7 +49,7 @@ script = ExtResource("2_hpko6")
 player = NodePath("../CharacterBody2D")
 
 [node name="Timer" type="Timer" parent="Camera2D" unique_id=1114300652]
-wait_time = 5.0
+wait_time = 4.0
 one_shot = true
 autostart = true
 
@@ -72,7 +75,8 @@ text = "Between Indonesia and Australia..."
 label_settings = SubResource("LabelSettings_bm8rm")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1519086138]
-position = Vector2(200, 0)
+position = Vector2(-200, 400)
+script = ExtResource("4_wry8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=256861622]
 shape = SubResource("CapsuleShape2D_47xu7")
@@ -81,3 +85,4 @@ shape = SubResource("CapsuleShape2D_47xu7")
 sprite_frames = SubResource("SpriteFrames_it8ie")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=821793735]
+tile_set = SubResource("TileSet_rqf8a")

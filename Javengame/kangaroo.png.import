@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr0sc8inh4h8p"
-path="res://.godot/imported/New Piskel-20261114-111747.png-fcb0c1d6afd1aba54fb50050a593d7bd.ctex"
+path="res://.godot/imported/kangaroo.png-dfea244340e3498ef6a04799de6a9bbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://New Piskel-20261114-111747.png"
-dest_files=["res://.godot/imported/New Piskel-20261114-111747.png-fcb0c1d6afd1aba54fb50050a593d7bd.ctex"]
+source_file="res://kangaroo.png"
+dest_files=["res://.godot/imported/kangaroo.png-dfea244340e3498ef6a04799de6a9bbf.ctex"]
 
 [params]
 
