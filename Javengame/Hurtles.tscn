@@ -79,3 +79,5 @@ shape = SubResource("CapsuleShape2D_47xu7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=594233834]
 sprite_frames = SubResource("SpriteFrames_it8ie")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=821793735]
