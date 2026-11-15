@@ -1,4 +1,4 @@
 Game by Avery of Not the Bear
 music by Nico Butterfield
 art by Gabe Babinski
-Arnov for moral support (club femboy)
+Arnav for moral support
